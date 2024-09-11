@@ -23,33 +23,6 @@
 <body  class="bg-gray-100">
     <!-- Spinner -->
 
-    <style>
-        /* Add transitions for background and text color */
-        .navbar {
-            transition: background-color 0.3s, color 0.3s;
-        }
-        .navbar.scrolled {
-            background-color: white;
-            color: black;
-        }
-        .navbar.scrolled a {
-            color: black;
-        }
-        .navbar.scrolled a:hover {
-            color: limegreen;
-        }
-    </style>
-<script>
-    // Scroll event listener to change navbar background and text color
-    window.addEventListener("scroll", function() {
-        var navbar = document.getElementById("navbar");
-        if (window.scrollY > 50) {
-            navbar.classList.add("scrolled");
-        } else {
-            navbar.classList.remove("scrolled");
-        }
-    });
-</script>
     <!-- Topbar Start -->
     <div class="bg-gray-600 text-white py-1 hidden lg:flex justify-between items-center px-10">
         <div class="flex items-center space-x-6">
@@ -386,37 +359,53 @@
 
 <!--Booking-->
 
-        <section class="booking">
-            <div class="online-booking">
-                <h4>Booking</h4>
-                <h2>Online Booking</h2>
-                <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit.
-                </p>
-                <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet
-                </p>
-                <button>Read More</button>
-            </div>
-
-            <div class="book-a-tour-section">
-                <h2>Book A Tour</h2>
-                <form action="">
-                    <div>
-                    <input type="text" placeholder="Your Name">
-                    <input type="text" name="Your E-mail" id="">
-                </div>
-                <div>
-                    <input type="text" name="Date & Time" id="">
-                    <select>
-                        <option>Destination 1</option>
-                        <option>Destination 2</option>
-                    </select>
-                </div>
-                <textarea name="Special Request" id=""></textarea>
-                <button>Book Now</button>
-                </form>
-            </div>
-        </section>
-
+<div class="relative bg-gray-200 py-12 mt-20">
+    <!-- Background Image -->
+    <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('/img/booking.jpg');"></div>
+    <div class="absolute inset-0 bg-black opacity-50"></div>
+  
+    <!-- Content Wrapper -->
+    <div class="relative z-10 container mx-auto grid lg:grid-cols-2 gap-8 items-center px-6 lg:px-12">
+  
+      <!-- Left Section: Online Booking -->
+      <div class="bg-transparent p-8 text-white">
+        <h3 class="text-sm uppercase font-bold text-lime-400 mb-2">Booking</h3>
+        <h2 class="text-4xl font-bold mb-6">Online Booking</h2>
+        <p class="mb-4">
+          Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit.
+        </p>
+        <p class="mb-8">
+          Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet.
+        </p>
+        <button class="border border-white text-white py-2 px-6 rounded-lg hover:bg-lime-500 hover:border-lime-500 hover:text-black transition duration-300">
+          Read More
+        </button>
+      </div>
+  
+      <!-- Right Section: Book A Tour Form -->
+      <div class="bg-transparent  p-8 text-white">
+        <h2 class="text-4xl font-bold mb-6 text-white">Book A Tour</h2>
+        <form class="space-y-4">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+            <input type="text" placeholder="Your Name" class="w-full py-3 px-4 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-lime-500">
+            <input type="email" placeholder="Your Email" class="w-full py-3 px-4 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-lime-500">
+          </div>
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+            <input type="text" placeholder="Date & Time" class="w-full py-3 px-4 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-lime-500">
+            <select class="w-full py-3 px-4 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-lime-500">
+              <option>Destination 1</option>
+              <option>Destination 2</option>
+            </select>
+          </div>
+          <textarea placeholder="Special Request" class="w-full py-3 px-4 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-lime-500"></textarea>
+          <button class="w-full py-3 px-4 bg-lime-500 text-white font-semibold rounded-lg hover:bg-lime-600 transition duration-300">
+            Book Now
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+  
 
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>
