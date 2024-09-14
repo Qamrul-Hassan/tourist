@@ -7,17 +7,17 @@
     <link rel="stylesheet" href="/public/output.css" />
 
     <!-- Google Web Fonts -->
-    <!-- Google Web Fonts -->
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap"
         rel="stylesheet">
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.0/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="/public/output.css">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
@@ -29,12 +29,7 @@
 
 
 <body class="bg-white">
-    <!-- Spinner Start -->
-    <div id="spinner" class="fixed inset-0 bg-white flex items-center justify-center">
-        <div class="animate-spin rounded-full h-12 w-12 border-t-4 border-blue-500"></div>
-    </div>
-    <!-- Spinner End -->
-
+  
 
     <!-- Topbar Start -->
     <div class="bg-gray-600 text-white py-1 hidden lg:flex justify-between items-center px-10">
@@ -102,7 +97,7 @@
     <!-- Navbar End -->
 
     <!-- Hero Section Start -->
-    <div class="relative bg-cover bg-center h-96" style="background-image: url('/img/bg-hero.jpg');">
+    <div class="relative bg-cover bg-center h-96 w-100" style="background-image: url('/img/bg-hero.jpg');">
         <div class="absolute inset-0 bg-black bg-opacity-50"></div> <!-- Dark overlay -->
         <div class="relative container mx-auto h-full flex flex-col justify-center items-center text-center text-white"
             data-aos="fade-down" data-aos-duration="1000">
@@ -768,11 +763,11 @@
                             diam et eos. Clita erat ipsum et lorem et sit.</p>
                     </div>
                 </swiper-slide>
-            </swiper-container>
+          
 
             <swiper-slide>
-                <div class="testimonial-item bg-white text-center border rounded-lg p-6 shadow-md">
-                    <img class="rounded-full mx-auto mb-4" src="/img/testimonial-4.jpg" alt="Testimonial 4"
+                <div class="testimonial-item bg-white text-center border rounded-lg p-6 shadow-md hover:bg-lime-500 hover:text-white">
+                    <img class="rounded-full mx-auto mb-4" src="/img/testimonial-2.jpg" alt="Testimonial 4"
                         style="width: 80px; height: 80px;">
                     <h5 class="text-lg font-bold">John Doe</h5>
                     <p class="text-sm">New York, USA</p>
@@ -780,10 +775,10 @@
                         et eos. Clita erat ipsum et lorem et sit.</p>
                 </div>
             </swiper-slide>
-            </swiper-container>
+            
             <swiper-slide>
-                <div class="testimonial-item bg-white text-center border rounded-lg p-6 shadow-md">
-                    <img class="rounded-full mx-auto mb-4" src="/img/testimonial-4.jpg" alt="Testimonial 4"
+                <div class="testimonial-item bg-white text-center border rounded-lg p-6 shadow-md hover:bg-lime-500 hover:text-white">
+                    <img class="rounded-full mx-auto mb-4" src="/img/testimonial-1.jpg" alt="Testimonial 5"
                         style="width: 80px; height: 80px;">
                     <h5 class="text-lg font-bold">John Doe</h5>
                     <p class="text-sm">New York, USA</p>
@@ -810,6 +805,7 @@
 
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
 
 
 
